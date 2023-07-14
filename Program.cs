@@ -1,1 +1,11 @@
-﻿
+﻿Console.Clear();
+Console.WriteLine("Enter first coordinates: (x,y,z)");
+int x = int.Parse(Console.ReadLine());
+int y = int.Parse(Console.ReadLine());
+int z = int.Parse(Console.ReadLine());
+Console.WriteLine("Enter second coordinates: (x,y,z)");
+int xx = int.Parse(Console.ReadLine());
+int yy = int.Parse(Console.ReadLine());
+int zz = int.Parse(Console.ReadLine());
+double ans = Math.Sqrt((xx - x) * (xx - x) + (yy - y) * (yy - y) + (zz - z) * (zz - z));
+Console.WriteLine($"Distanse = {ans}");
